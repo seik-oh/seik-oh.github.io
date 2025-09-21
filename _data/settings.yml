@@ -13,7 +13,7 @@ menu:
   # - { name: Blog, link: "/blog" }
   - { name: Portfolio, link: "/portfolio" }
   - { name: CV/Resume, link: "/cv" }
-  - { name: Contact, link: "/contact" }
+  # - { name: Contact, link: "/contact" }
 
 #-------------------------------
 # Google Analytics Section
