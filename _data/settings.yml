@@ -45,10 +45,7 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb: >
-  CS PhD student at Georgia Institute of Technology, advised by Dr. Jessica Roberts. specializing in Human–Computer Interaction and Learning Science & Technology.
-  I turn complex problems into interfaces people learn fast and keep using. I bridge research and engineering—mixing interviews, experiments, and prototypes—to ship inclusive, measurable improvements.
-
+# blurb in `about-section.html`
 blurb-btn-link: "/about"
 blurb-btn-name: Learn more
 
@@ -72,16 +69,16 @@ work-process:
 team: []
 
 #-------------------------------
-# Skills Section
+# # Skills Section
 
-skills-title: Skills
-skills:
-  - { name: UX Research (qual + quant), color: "#fdb157", value: "90%" }
-  - { name: Prototyping (Figma/React/Unity), color: "#9473e6", value: "88%" }
-  - { name: Accessibility & Inclusive Design, color: "#bdecf6", value: "85%" }
-  - { name: Data Visualization, color: "#ffbcaa", value: "82%" }
-  - { name: Python / PyTorch / TensorFlow, color: "#c6e48b", value: "80%" }
-  - { name: iOS (Swift/SwiftUI), color: "#ffd166", value: "75%" }
+# skills-title: Skills
+# skills:
+#   - { name: UX Research (qual + quant), color: "#fdb157", value: "90%" }
+#   - { name: Prototyping (Figma/React/Unity), color: "#9473e6", value: "88%" }
+#   - { name: Accessibility & Inclusive Design, color: "#bdecf6", value: "85%" }
+#   - { name: Data Visualization, color: "#ffbcaa", value: "82%" }
+#   - { name: Python / PyTorch / TensorFlow, color: "#c6e48b", value: "80%" }
+#   - { name: iOS (Swift/SwiftUI), color: "#ffd166", value: "75%" }
 
 #-------------------------------
 # Exprerience Section
@@ -213,50 +210,72 @@ portfolio-home-items:
 # Portfolio Page
 portfolio-label:
   - { title: "UX Research", type: "uxr" }
-  - { title: "UX Engineering", type: "uxeng" }
+  # - { title: "UX Engineering", type: "uxeng" }
   - { title: "Data Visualization", type: "dataviz" }
   - { title: "AR/VR", type: "arvr" }
-  - { title: "iOS", type: "ios" }
+  # - { title: "iOS", type: "ios" }
   - { title: "Accessibility", type: "a11y" }
 
 portfolio-items:
-  - image: "assets/images/portfolio/suits-2025.png"
-    url: "#"
-    portfolio-type:
-      - type: "arvr"
-      - type: "uxeng"
-      - type: "uxr"
-
-  - image: "assets/images/portfolio/suits-2024.png"
-    url: "#"
-    portfolio-type:
-      - type: "arvr"
-      - type: "uxeng"
-
-  - image: "assets/images/portfolio/adhd-redesign.png"
-    url: "#"
+  - image: "assets/images/portfolio/GearshiftFellowship.png"
+    title: "Gearshift Fellowship - ADHD ResearchPlatform"
+    description: "Led UI/UX improvements for users with ADHD through the Gearshift Fellowship. Focused on accessibility-first design principles and cognitive load reduction for mental flexibility and adaptive behavior."
+    date: "2024"
+    technologies: ["Accessibility", "Computational Psychiatry", "UX Research", "Figma"]
+    demo-url: "https://www.gingjehli.com/gearshiftfellowship"
     portfolio-type:
       - type: "uxr"
       - type: "a11y"
 
-  - image: "assets/images/portfolio/contaqt.png"
-    url: "#"
-    portfolio-type:
-      - type: "dataviz"
-      - type: "uxr"
-
   - image: "assets/images/portfolio/spaceover.png"
-    url: "#"
+    title: "SpaceOver"
+    description: "Multisensory iOS app using spatial audio and haptics for Blind and Visually Impaired users to experience astronomy. Promotes inclusive STEM education."
+    date: "2023"
+    technologies: ["Swift", "iOS", "Accessibility", "Audio Design"]
+    demo-url: "https://drive.google.com/file/d/1uBgmBxEDQRS74Tu2xB3uZ8Qm41UB7-Bk/view"
+    code-url: "https://github.com/DeveloperAcademy-POSTECH/MacC-Team-TARS"
     portfolio-type:
       - type: "ios"
       - type: "a11y"
-      - type: "uxeng"
 
-  - image: "assets/images/portfolio/emotion-recognition.png"
-    url: "#"
+  - image: "assets/images/portfolio/risd2025.JPG"
+    title: "NASA SUITS 2025"
+    description: "Designed and implemented rover interfaces and automationsfor lunar rover operations, tested at Johnson Space Center as a Top 10 finalist."
+    date: "2024-2025"
+    technologies: ["Python", "JavaScript"]
+    code-url: "https://github.com/RISDxNASA-SUITS/SUITS-25"
     portfolio-type:
+      - type: "arvr"
+
+  - image: "assets/images/portfolio/risd2024.JPG"
+    title: "NASA SUITS 2024"
+    description: "AR interface development for space exploration missions. Created immersive experiences for astronaut training and mission planning."
+    date: "2023-2024"
+    technologies: ["AR/VR", "Unity", "C#", "MRTK3"]
+    demo-url: "https://www.youtube.com/live/79T2riu6UrY"
+    code-url: "https://github.com/RISDxNASA-SUITS/SUITS-24"
+    portfolio-type:
+      - type: "arvr"
+
+  - image: "assets/images/portfolio/atmosphere.png"
+    title: "ContAQT"
+    description: "Interactive data visualization tool that transforms complex multi-pollutant air quality data into clear, actionable insights for diverse audiences."
+    date: "2025"
+    technologies: ["UX Research"]
+    portfolio-type:
+      - type: "uxr"
       - type: "dataviz"
-      - type: "uxeng"
+  
+  - image: "assets/images/portfolio/gaongil.png"
+    title: "Gaongil(가온길)"
+    description: "A mobile app that provides a clear, centralized view of the status of bills in legislative areas you care about—making legal and policy tracking accessible for all (ranked #13 in App Store News)"
+    date: "2023"
+    technologies: ["Swift", "Accesssibility", "UIKit", "CoreData", "Figma"]
+    code-url: "https://github.com/Gaongil/Gaongil"
+    demo-rul: "https://github.com/Gaongil/Gaongil"
+    portfolio-type:
+      - type: "a11y"
+
 
 # #-------------------------------
 # # Testimonials Section

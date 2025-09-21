@@ -13,16 +13,18 @@
       <div class="col-lg-8">
         <div class="timeline">
           {% for education in site.data.settings.education %}
-          <div class="timeline-item">
-            <div class="timeline-marker">
-              <i class="ti-medall"></i>
+            {% if education.name and education.date and education.organization %}
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <i class="ti-medall"></i>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-date">{{ education.date }}</div>
+                <h4 class="timeline-title">{{ education.name }}</h4>
+                <p class="timeline-organization">{{ education.organization }}</p>
+              </div>
             </div>
-            <div class="timeline-content">
-              <div class="timeline-date">{{ education.date }}</div>
-              <h4 class="timeline-title">{{ education.name }}</h4>
-              <p class="timeline-organization">{{ education.organization }}</p>
-            </div>
-          </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -50,11 +52,26 @@
   border-radius: 2px;
 }
 
+.timeline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 4px;
+  height: 0;
+  background: transparent;
+  transform: translateX(-50%);
+}
+
 .timeline-item {
   position: relative;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
 }
 
 .timeline-item:nth-child(odd) {

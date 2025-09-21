@@ -3,46 +3,44 @@ layout: about
 title: About Me
 author: Seik Oh
 image: assets/images/about/SeikOh.jpeg
-# signature: assets/images/about/signature.png
 ---
 
-I'm Seik Oh, a CS PhD student focused on **Human–Computer Interaction (HCI)** and **Learning Science & Technology**. I research and design interfaces that people can **learn quickly and keep using** by blending **qualitative research** (interviews, usability tests) with **quantitative data** (behavioral metrics, error rates). My sweet spot is the handoff from **research → prototype → insight-backed decisions**.
+I'm Seik Oh, a Ph.D. student in Computer Science at Georgia Institute of Technology, advised by Dr. Jessica Roberts. My journey into Human-Computer Interaction began during my undergraduate studies in South Korea, where I first discovered how technology could transform learning experiences.
 
-#### What I'm working on
+#### Current Research Focus
 
-- **Interactive data visualization (ContAQT):** turning multi-pollutant air-quality data into clear, actionable visuals.
+My work centers on **ContAQT**, an interactive data visualization tool that transforms complex multi-pollutant air quality data into clear, actionable insights. This project explores how cognitive psychology principles can make environmental data more accessible and understandable for diverse audiences.
 
-- **Summer Camp Data Literacy Program:** Program for K-12 students to learn about data literacy.
+I'm also developing a **Summer Camp Data Literacy Program** for K-12 students, creating hands-on experiences that teach data literacy through interactive visualizations and real-world applications.
 
-<br/>
+#### Research Approach
 
-#### Major Projects I've worked on
-
-- **Accessibility-first platform redesign (Gearshift Fellowship):** Figma-led UI/UX updates for users with ADHD.
-
-- **NASA SUITS (AR interface & rover automation):** Mission-critical flows tested at Johnson Space Center.
-
-- **SpaceOver (App):** Multisensory app using spatial audio & haptics for Blind/Visually Impaired users to provide astronomical experiences.
+I believe in bridging the gap between research and practice. My methodology combines:
+- **Qualitative research** (interviews, usability studies) to understand user needs
+- **Quantitative analysis** (behavioral metrics, error rates) to measure impact
+- **Rapid prototyping through design thinking** to test ideas quickly and iteratively
 
 <!-- <br/> -->
 
-<!-- #### How I work
+<!-- #### Key Projects
 
-- Mixed-methods **UX research** → study plans, scripts, synthesis, and concise reports.
+- **NASA SUITS (2024-2025):** Designed AR interfaces for lunar rover operations, tested at Johnson Space Center as a Top 10 finalist
+- **SpaceOver:** Created a multisensory iOS app using spatial audio and haptics for Blind and Visually Impaired users to experience astronomy
+- **Accessibility-First Platform Redesign:** Led UI/UX improvements for users with ADHD through the Gearshift Fellowship -->
 
-- **UX engineering** → rapid prototyping (Figma, React, programming) and lightweight instrumentation for learning what works.
+<!-- <br/>
 
-- **Accessibility & learning design** → patterns that improve onboarding, comprehension, and retention. -->
+#### Technical Skills
+
+- **Design & Prototyping:** Figma, React, Unity  
+- **Data Science:** Python, PyTorch, TensorFlow, OpenCV, R  
+- **Mobile Development:** Swift/SwiftUI, TypeScript  
+- **Research Tools:** Git/GitHub, Mixed-methods analysis -->
 
 <br/>
 
-#### Toolkits
+#### Fun Facts
 
-Figma, React, Unity, Python, PyTorch, TensorFlow, OpenCV, TypeScript, Swift/SwiftUI, R, Git/GitHub
-
-
-#### Fun facts
-
-I've played the Korean traditional instrument called _haegum_ for 2 years.
-I've played rugby for my school when I was in the UK.
-I love to cook food!
+I love cooking food and eating food!<br/>
+Love to go do coffee shops to chat or do some work while listening to music on my headphones.<br/>
+I used to play the Korean traditional instrument _haegum_ and also played rugby back in the days 🤣

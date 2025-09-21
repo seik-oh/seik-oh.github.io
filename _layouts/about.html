@@ -23,20 +23,104 @@ layout: default
 <!-- about -->
 <section class="section pt-5">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        {{ content }}
-      </div>
-      <div class="col-md-4 text-center drag-lg-top">
-        <div class="shadow-down mb-4">
-          <img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.author }}" class="img-fluid w-100 rounded-lg border-thick border-white">
+    <!-- Profile Section -->
+    <div class="row mb-5">
+      <div class="col-lg-4 text-center mb-4">
+        <div class="profile-image-container">
+          <img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.author }}" class="img-fluid rounded-lg border-thick border-white shadow">
         </div>
-        <!-- <img src="{{ site.baseurl }}/{{ page.signature }}" alt="signature" class="img-fluid"> -->
-        <h4>{{ page.author }}</h4>
+        <h3 class="mt-3 mb-0">{{ page.author }}</h3>
+        <p class="text-muted">Ph.D. Student, Computer Science</p>
+      </div>
+      <div class="col-lg-8">
+        <div class="about-content">
+          {{ content }}
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+.profile-image-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.border-thick {
+  border: 8px solid #fff;
+}
+
+.about-content {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.about-content h4 {
+  color: #41228e;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.about-content h4:first-child {
+  margin-top: 0;
+}
+
+.about-content ul {
+  margin-bottom: 1.5rem;
+}
+
+.about-content li {
+  margin-bottom: 0.5rem;
+}
+
+.about-content strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .about-content {
+    font-size: 1rem;
+  }
+  
+  .profile-image-container {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .about-content h4 {
+    font-size: 1.2rem;
+  }
+  
+  .profile-image-container {
+    max-width: 200px;
+  }
+}
+
+/* Accessibility Improvements */
+.about-content {
+  max-width: none;
+}
+
+.about-content p {
+  margin-bottom: 1.2rem;
+}
+
+.about-content br {
+  margin-bottom: 0.5rem;
+}
+</style>
 <!-- /about -->
 
 {% include work-process-section.html %}

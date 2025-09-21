@@ -1,12 +1,169 @@
 <!-- about -->
 <section class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <p class="font-secondary paragraph-lg text-dark">{{ site.data.settings.blurb }}</p>
-        <a href="{{ site.data.settings.blurb-btn-link }}" class="btn btn-transparent">{{ site.data.settings.blurb-btn-name }}</a>
+    <div class="row align-items-center">
+      <!-- Profile Image -->
+      <div class="col-lg-4 col-md-5 text-center mb-4 mb-lg-0">
+        <div class="profile-image-container">
+          <img src="{{ site.baseurl }}assets/images/about/SeikOh_Scotland.jpg" alt="Seik Oh - Computer Science PhD Student" class="img-fluid rounded-lg shadow-lg">
+        </div>
+      </div>
+      
+      <!-- Content -->
+      <div class="col-lg-8 col-md-7">
+        <div class="about-content">
+          <!-- Identity Line -->
+          <div class="about-identity">
+            <h2 class="about-title">Situated at the intersection of <em class="highlight">Computer Science</em>, <em class="highlight">HCI</em>, and <em class="highlight">Learning Science</em>, I am interested in how principles from <em class="highlight">cognitive psychology</em> and <em class="highlight">accessibility</em> can inform the design of technologies that make learning more intuitive, equitable, and sustainable.</h2>
+            <div class="title-accent"></div>
+          </div>
+          
+          <!-- Body Text -->
+          <div class="about-body">
+            <p class="about-text">
+              In my work, I combine <em class="highlight">qualitative methods</em> (interviews, usability studies) with <em class="highlight">quantitative analysis</em> (behavioral metrics, error rates) to generate actionable insights. My goal is to bridge research and engineering, moving from research → prototype → insight-backed decisions that create inclusive and measurable improvements in learning technologies.
+            </p>
+          </div>
+          
+          <!-- Call to Action -->
+          <div class="about-cta">
+            <a href="{{ site.data.settings.blurb-btn-link }}" class="btn btn-primary">{{ site.data.settings.blurb-btn-name }}</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+/* Profile Image Styling */
+.profile-image-container {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.profile-image-container img {
+  border: 4px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.profile-image-container img:hover {
+  transform: scale(1.02);
+}
+
+/* Content Styling */
+.about-content {
+  text-align: left;
+  max-width: 100%;
+}
+
+.about-identity {
+  margin-bottom: 2rem;
+}
+
+.about-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.title-accent {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #41228e, #2bfdff);
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.about-body {
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+.highlight {
+  font-style: italic;
+  color: #41228e;
+  font-weight: 500;
+}
+
+.about-cta {
+  text-align: left;
+}
+
+.btn-primary {
+  background-color: #41228e;
+  border-color: #41228e;
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2d1a5f;
+  border-color: #2d1a5f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(65, 34, 142, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .profile-image-container {
+    max-width: 250px;
+  }
+  
+  .about-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 1.2rem;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+  }
+  
+  .about-cta {
+    text-align: center;
+  }
+  
+  .profile-image-container {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-title {
+    font-size: 1.1rem;
+  }
+  
+  .about-text {
+    font-size: 0.95rem;
+  }
+  
+  .profile-image-container {
+    max-width: 200px;
+  }
+}
+</style>
 <!-- /about -->
