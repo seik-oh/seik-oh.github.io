@@ -7,11 +7,12 @@ image: assets/images/about/SeikOh.jpeg
 
 I'm Seik Oh, a Ph.D. student in Computer Science at Georgia Institute of Technology, advised by Dr. Jessica Roberts. My journey into Human-Computer Interaction began during my undergraduate studies in South Korea, where I first discovered how technology could transform learning experiences.
 
+
 #### Current Research Focus
 
-My work centers on **ContAQT**, an interactive data visualization tool that transforms complex multi-pollutant air quality data into clear, actionable insights. This project explores how cognitive psychology principles can make environmental data more accessible and understandable for diverse audiences.
+My recent work has been contributing to **ContAQT**, an interactive data visualization tool that transforms complex multi-pollutant air quality data into clear, actionable insights. This project explores how design rinciples can make environmental data more accessible and understandable for public audiences.
 
-I'm also developing a **Summer Camp Data Literacy Program** for K-12 students, creating hands-on experiences that teach data literacy through interactive visualizations and real-world applications.
+I'm also conducting research for the **Summer Camp Data Literacy Program** for K-12 students, a program that creates hands-on experiences to teach data literacy through interactive visualizations and real-world applications.
 
 #### Research Approach
 
