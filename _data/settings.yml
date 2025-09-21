@@ -11,7 +11,7 @@ copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.c
 menu:
   - { name: About, link: "/about" }
   # - { name: Blog, link: "/blog" }
-  - { name: Portfolio, link: "/portfolio" }
+  - { name: Works, link: "/portfolio" }
   - { name: CV/Resume, link: "/cv" }
   # - { name: Contact, link: "/contact" }
 
@@ -131,17 +131,17 @@ experience:
 education-title: Education
 education:
   - {
-      name: "Ph.D. in Computer Science (HCI)",
+      name: "Ph.D. in Computer Science",
       date: "Aug 2025 – Present",
       organization: "Georgia Institute of Technology, Atlanta, GA, USA",
     }
   - {
-      name: "Sc.M. in Computer Science (GPA 4.0/4.0)",
+      name: "Sc.M. in Computer Science",
       date: "May 2025",
       organization: "Brown University, Providence, RI, USA",
     }
   - {
-      name: "B.S. in Computer Science & Engineering (GPA 4.38/4.50, Rank 1/46)",
+      name: "B.S. in Computer Science & Engineering",
       date: "Feb 2022",
       organization: "Soongsil University, Seoul, South Korea",
     }
@@ -150,35 +150,49 @@ education:
       date: "Feb 2022",
       organization: "Soongsil University, Seoul, South Korea",
     }
+
+# #-------------------------------
+# # Publications Section
+
+# publications-title: Publications
+# publications:
   - {
-      name: "Teacher's Certificates (Level 2): English; Information & Computer",
-      date: "2022",
-      organization: "South Korea",
+      To be Updated
     }
+#   - {
+#       title: "ContAQT: Interactive Data Visualization for Multi-Pollutant Air Quality Analysis",
+#       authors: "ANONYMOUS AUTHOR(S)",
+#       venue: "CHI 2026 (Submitted)",
+#       year: "2025",
+#       type: "Conference Paper",
+#       status: "Submitted",
+#       description: "An interactive visualization tool for exploring complex multi-pollutant air quality data with focus on accessibility and user comprehension.",
+#       link: "#"
+#     }
 
 #-------------------------------
-# Services Section
+# # Services Section
 
-services-title: Services
-services:
-  - {
-      name: "UX Research",
-      icon: ti-user,
-      description: "Mixed methods—interviews, usability testing, surveys, field/remote studies; study plans, scripts, and actionable reports.",
-      active: true,
-    }
-  - {
-      name: "UX Engineering",
-      icon: ti-panel,
-      description: "Rapid prototyping in Figma/React/Unity, instrumentation & analytics, design systems, accessibility-first implementation.",
-      active: true,
-    }
-  - {
-      name: "Data Visualization",
-      icon: ti-bar-chart,
-      description: "Interactive visualization for complex datasets; clarity, narrative, and decision support.",
-      active: true,
-    }
+# services-title: Services
+# services:
+#   - {
+#       name: "UX Research",
+#       icon: ti-user,
+#       description: "Mixed methods—interviews, usability testing, surveys, field/remote studies; study plans, scripts, and actionable reports.",
+#       active: true,
+#     }
+#   - {
+#       name: "UX Engineering",
+#       icon: ti-panel,
+#       description: "Rapid prototyping in Figma/React/Unity, instrumentation & analytics, design systems, accessibility-first implementation.",
+#       active: true,
+#     }
+#   - {
+#       name: "Data Visualization",
+#       icon: ti-bar-chart,
+#       description: "Interactive visualization for complex datasets; clarity, narrative, and decision support.",
+#       active: true,
+#     }
 
 #-------------------------------
 # Portfolio (Section and Page)
@@ -244,18 +258,18 @@ portfolio-items:
       - type: "dataviz"
       - type: "uxeng"
 
-#-------------------------------
-# Testimonials Section
+# #-------------------------------
+# # Testimonials Section
 
-testimonial-items: []
+# testimonial-items: []
 
-#-------------------------------
-# Client Slider Section
+# #-------------------------------
+# # Client Slider Section
 
-client-slider-items: []
+# client-slider-items: []
 
-#-------------------------------
-# Contact Section
+# #-------------------------------
+# # Contact Section
 
-contact-title: Contact
-contact-email: seikoh@gatech.edu
+# contact-title: Contact
+# contact-email: seikoh@gatech.edu

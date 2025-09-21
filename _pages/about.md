@@ -6,7 +6,7 @@ image: assets/images/about/SeikOh.jpeg
 # signature: assets/images/about/signature.png
 ---
 
-I'm Seik Oh, a CS PhD student focused on **Human–Computer Interaction (HCI)** and **Learning Science & Technology**. I research and design interfaces that people can **learn quickly and keep using** by blending **qualitative research** (interviews, usability tests) with **quantitative data** (behavioral metrics, error rates). My sweet spot is the handoff from **research → prototype → insight-backed product decisions**.
+I'm Seik Oh, a CS PhD student focused on **Human–Computer Interaction (HCI)** and **Learning Science & Technology**. I research and design interfaces that people can **learn quickly and keep using** by blending **qualitative research** (interviews, usability tests) with **quantitative data** (behavioral metrics, error rates). My sweet spot is the handoff from **research → prototype → insight-backed decisions**.
 
 #### What I'm working on
 
