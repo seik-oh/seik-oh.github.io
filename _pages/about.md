@@ -12,21 +12,27 @@ I'm Seik Oh, a CS PhD student focused on **Human–Computer Interaction (HCI)** 
 
 - **Interactive data visualization (ContAQT):** turning multi-pollutant air-quality data into clear, actionable visuals.
 
-<br/>
-
-#### What I've worked on
-
-- **Accessibility-first platform redesign (Gearshift Fellowship):** Figma-led UI/UX updates for users with ADHD; deployed to 100+ beta users.
-- **NASA SUITS (AR & rover interfaces):** mission-critical flows tested at Johnson Space Center.
-- **SpaceOver (iOS):** multisensory app using spatial audio & haptics for Blind/Visually Impaired users to provide astronomical experiences.
+- **Summer Camp Data Literacy Program:** Program for K-12 students to learn about data literacy.
 
 <br/>
 
-#### How I work
+#### Major Projects I've worked on
+
+- **Accessibility-first platform redesign (Gearshift Fellowship):** Figma-led UI/UX updates for users with ADHD.
+
+- **NASA SUITS (AR interface & rover automation):** Mission-critical flows tested at Johnson Space Center.
+
+- **SpaceOver (App):** Multisensory app using spatial audio & haptics for Blind/Visually Impaired users to provide astronomical experiences.
+
+<!-- <br/> -->
+
+<!-- #### How I work
 
 - Mixed-methods **UX research** → study plans, scripts, synthesis, and concise reports.
+
 - **UX engineering** → rapid prototyping (Figma, React, programming) and lightweight instrumentation for learning what works.
-- **Accessibility & learning design** → patterns that improve onboarding, comprehension, and retention.
+
+- **Accessibility & learning design** → patterns that improve onboarding, comprehension, and retention. -->
 
 <br/>
 
