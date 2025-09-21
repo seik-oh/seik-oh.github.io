@@ -2,13 +2,10 @@
 #-------------------------------
 # General Site Settings
 
-title: Kross
+title: Seik Oh
 logo:
-author: themefisher
+author: Seik Oh
 description: this is meta description
-email: steve.fruits@email.com
-phone: +880 2544 658 256
-address: 125/A, CA Commercial Area, California, USA
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
@@ -36,62 +33,54 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: "Hi! I'm <br> Seik <br> HCI × UX Researcher & Engineer"
 
 social:
-  - { icon: "ti-facebook", link: "#" }
-  - { icon: "ti-instagram", link: "#" }
-  - { icon: "ti-dribbble", link: "#" }
-  - { icon: "ti-twitter", link: "#" }
+  - { icon: "ti-linkedin", link: "https://linkedin.com/in/seikoh" }
+  - { icon: "ti-github", link: "https://github.com/glitterer" }
+  - { icon: "ti-email", link: "mailto:seikoh@gatech.edu" }
 
 #-------------------------------
 # About (Section and Page)
 
 # About Section
-blurb: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+blurb: >
+  CS PhD student at Georgia Institute of Technology, advised by Dr. Jessica Roberts. specializing in Human–Computer Interaction and Learning Science & Technology.
+  I turn complex problems into interfaces people learn fast and keep using. I bridge research and engineering—mixing interviews, experiments, and prototypes—to ship inclusive, measurable improvements.
 
 blurb-btn-link: "/about"
-blurb-btn-name: know more
+blurb-btn-name: Learn more
 
 # About Page
 
 # Work Process Section
 work-process:
-  - title: "Research and Plan"
+  - title: "Research & Plan"
     icon: "assets/images/icons/plan.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "Define goals, users, and constraints. Mixed-methods research, task analysis, success metrics."
 
-  - title: "Design and Develop"
+  - title: "Design & Prototype"
     icon: "assets/images/icons/design.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "Wireframes to hi-fi in Figma; interactive prototypes (React/Unity); accessibility-first patterns."
 
-  - title: "Deliver"
+  - title: "Test & Deliver"
     icon: "assets/images/icons/print.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "Usability studies, analytics instrumentation, iteration, and handoff with clear specs & insights."
 
-# My Team Section
-team:
-  - title: "Jack Schenziwe"
-    image: "assets/images/team/member-1.png"
-    designation: "Project Manager"
-
-  - title: "Julias Carlie"
-    image: "assets/images/team/member-2.png"
-    designation: "Web Developer"
-
-  - title: "John Doe"
-    image: "assets/images/team/member-3.png"
-    designation: "Designer"
+# My Team Section (optional — keep empty or remove)
+team: []
 
 #-------------------------------
 # Skills Section
 
 skills-title: Skills
 skills:
-  - { name: Web Design, color: "#fdb157", value: "90%" }
-  - { name: Logo Design, color: "#9473e6", value: "60%" }
-  - { name: After Effects, color: "#bdecf6", value: "80%" }
-  - { name: Web App, color: "#ffbcaa", value: "70%" }
+  - { name: UX Research (qual + quant), color: "#fdb157", value: "90%" }
+  - { name: Prototyping (Figma/React/Unity), color: "#9473e6", value: "88%" }
+  - { name: Accessibility & Inclusive Design, color: "#bdecf6", value: "85%" }
+  - { name: Data Visualization, color: "#ffbcaa", value: "82%" }
+  - { name: Python / PyTorch / TensorFlow, color: "#c6e48b", value: "80%" }
+  - { name: iOS (Swift/SwiftUI), color: "#ffd166", value: "75%" }
 
 #-------------------------------
 # Exprerience Section
@@ -99,22 +88,40 @@ skills:
 experience-title: Experience
 experience:
   - {
-      name: Junior UX Designer,
+      name: "Graduate Research Assistant — TILES Lab (HCI & Data Viz)",
       icon: "icon-1.png",
-      date: "Jan 2007 - Feb 2009",
-      organization: "WEBEX",
+      date: "Aug 2025 – Present",
+      organization: "Georgia Institute of Technology, Atlanta, GA",
     }
   - {
-      name: UX & UI Designer,
+      name: "Software Developer — NASA SUITS 2025 (Top 10 Finalist)",
       icon: "icon-2.png",
-      date: "Mar 2009 - Aug 2014",
-      organization: "AUGMEDIX",
+      date: "Sep 2024 – May 2025",
+      organization: "RISD Rover & Brown University / Johnson Space Center",
     }
   - {
-      name: Senior UI Designer,
+      name: "Research Assistant Intern — LNCC Lab (UI/UX, Accessibility)",
       icon: "icon-3.png",
-      date: "Sep 2014 - Present",
-      organization: "THEMEFISHER",
+      date: "Jun 2024 – Dec 2024",
+      organization: "Brown University, Providence, RI",
+    }
+  - {
+      name: "AR/VR Developer — NASA SUITS 2024 (Top 10 Finalist)",
+      icon: "icon-1.png",
+      date: "Dec 2023 – May 2024",
+      organization: "RISD Rover & Brown University / Johnson Space Center",
+    }
+  - {
+      name: "iOS Developer Learner — Apple Developer Academy",
+      icon: "icon-2.png",
+      date: "Sep 2022 – Dec 2022",
+      organization: "POSTECH, Pohang, South Korea",
+    }
+  - {
+      name: "Technical Assistant — KATE Conference",
+      icon: "icon-3.png",
+      date: "Jul 2021 – Aug 2021",
+      organization: "Seoul, South Korea",
     }
 
 #-------------------------------
@@ -123,24 +130,29 @@ experience:
 education-title: Education
 education:
   - {
-      name: Marters in UX Design,
-      date: "2006",
-      organization: "Masassusets Institute of Technology",
+      name: "Ph.D. in Computer Science (HCI)",
+      date: "Aug 2025 – Present",
+      organization: "Georgia Institute of Technology, Atlanta, GA, USA",
     }
   - {
-      name: Honours in Fine Arts,
-      date: "2004",
-      organization: "Harvard University",
+      name: "Sc.M. in Computer Science (GPA 4.0/4.0)",
+      date: "May 2025",
+      organization: "Brown University, Providence, RI, USA",
     }
   - {
-      name: Higher Secondary Certificat,
-      date: "2000",
-      organization: "Cardiff School",
+      name: "B.S. in Computer Science & Engineering (GPA 4.38/4.50, Rank 1/46)",
+      date: "Feb 2022",
+      organization: "Soongsil University, Seoul, South Korea",
     }
   - {
-      name: Secondary School Certificate,
-      date: "1998",
-      organization: "Cardiff School",
+      name: "B.A. in English Language & Literature",
+      date: "Feb 2022",
+      organization: "Soongsil University, Seoul, South Korea",
+    }
+  - {
+      name: "Teacher's Certificates (Level 2): English; Information & Computer",
+      date: "2022",
+      organization: "South Korea",
     }
 
 #-------------------------------
@@ -149,155 +161,100 @@ education:
 services-title: Services
 services:
   - {
-      name: UI Design,
-      icon: ti-palette,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: ,# Add true to select section
+      name: "UX Research",
+      icon: ti-user,
+      description: "Mixed methods—interviews, usability testing, surveys, field/remote studies; study plans, scripts, and actionable reports.",
+      active: true,
     }
   - {
-      name: UX Design,
-      icon: ti-vector,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: true, # Add true to select section
-    }
-  - {
-      name: Interaction Design,
+      name: "UX Engineering",
       icon: ti-panel,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: ,# Add true to select section
+      description: "Rapid prototyping in Figma/React/Unity, instrumentation & analytics, design systems, accessibility-first implementation.",
+      active: true,
+    }
+  - {
+      name: "Data Visualization",
+      icon: ti-bar-chart,
+      description: "Interactive visualization for complex datasets; clarity, narrative, and decision support.",
+      active: true,
     }
 
 #-------------------------------
 # Portfolio (Section and Page)
 
-# Portfolio Home Section
+# Portfolio Home Section (replace images with your own)
 portfolio-home-items:
-  - image: "assets/images/portfolio/item-1.png"
+  - image: "assets/images/portfolio/suits-2025.png"
     url: "#"
-
-  - image: "assets/images/portfolio/item-2.png"
+  - image: "assets/images/portfolio/adhd-redesign.png"
     url: "#"
-
-  - image: "assets/images/portfolio/item-3.png"
+  - image: "assets/images/portfolio/contaqt.png"
     url: "#"
-
-  - image: "assets/images/portfolio/item-4.png"
+  - image: "assets/images/portfolio/spaceover.png"
     url: "#"
-
-  - image: "assets/images/portfolio/item-5.png"
+  - image: "assets/images/portfolio/dataviz.png"
     url: "#"
 
 # Portfolio Page
 portfolio-label:
-  - { title: "UI/UX Design", type: "design" }
-  - { title: "BRANDING", type: "branding" }
-  - { title: "ILLUSTRATION", type: "illustration" }
+  - { title: "UX Research", type: "uxr" }
+  - { title: "UX Engineering", type: "uxeng" }
+  - { title: "Data Visualization", type: "dataviz" }
+  - { title: "AR/VR", type: "arvr" }
+  - { title: "iOS", type: "ios" }
+  - { title: "Accessibility", type: "a11y" }
 
 portfolio-items:
-  - image: "assets/images/portfolio/item-1.png"
+  - image: "assets/images/portfolio/suits-2025.png"
     url: "#"
     portfolio-type:
-      - type: "design"
-      - type: "illustration"
+      - type: "arvr"
+      - type: "uxeng"
+      - type: "uxr"
 
-  - image: "assets/images/portfolio/item-2.png"
+  - image: "assets/images/portfolio/suits-2024.png"
     url: "#"
     portfolio-type:
-      - type: "branding"
+      - type: "arvr"
+      - type: "uxeng"
 
-  - image: "assets/images/portfolio/item-3.png"
+  - image: "assets/images/portfolio/adhd-redesign.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "uxr"
+      - type: "a11y"
 
-  - image: "assets/images/portfolio/item-6.png"
+  - image: "assets/images/portfolio/contaqt.png"
     url: "#"
     portfolio-type:
-      - type: "design"
-      - type: "branding"
+      - type: "dataviz"
+      - type: "uxr"
 
-  - image: "assets/images/portfolio/item-8.png"
+  - image: "assets/images/portfolio/spaceover.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "ios"
+      - type: "a11y"
+      - type: "uxeng"
 
-  - image: "assets/images/portfolio/item-5.png"
+  - image: "assets/images/portfolio/emotion-recognition.png"
     url: "#"
     portfolio-type:
-      - type: "design"
-
-  - image: "assets/images/portfolio/item-1.png"
-    url: "#"
-    portfolio-type:
-      - type: "branding"
-
-  - image: "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      - type: "illustration"
-      - type: "branding"
-
-  - image: "assets/images/portfolio/item-7.png"
-    url: "#"
-    portfolio-type:
-      - type: "illustration"
+      - type: "dataviz"
+      - type: "uxeng"
 
 #-------------------------------
 # Testimonials Section
 
-testimonial-items:
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/client-1.png"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+testimonial-items: []
 
 #-------------------------------
 # Client Slider Section
 
-client-slider-items:
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
+client-slider-items: []
 
 #-------------------------------
 # Contact Section
 
-contact-title: Contact Info
-contact-email: steve.fruits@email.com
+contact-title: Contact
+contact-email: seikoh@gatech.edu
