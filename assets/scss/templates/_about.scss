@@ -1,5 +1,13 @@
 .page-title-alt{
   padding: 350px 0 70px;
+  
+  @include tablet {
+    padding: 200px 0 50px;
+  }
+  
+  @include mobile {
+    padding: 150px 0 30px;
+  }
 }
 
 .border-thick{
@@ -18,38 +26,151 @@
     position: relative;
     z-index: 1;
   }
+  
   .bg-shape-1{
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 0;
+    
+    @include tablet {
+      opacity: 0.3;
+    }
+    
+    @include mobile {
+      display: none;
+    }
   }
+  
   .bg-shape-2{
     position: absolute;
     left: 70px;
     top: 100px;
+    z-index: 0;
+    
+    @include tablet {
+      left: 20px;
+      top: 50px;
+      opacity: 0.4;
+    }
+    
+    @include mobile {
+      display: none;
+    }
   }
+  
   .bg-shape-3{
     position: absolute;
     left: 30%;
     top: 50px;
     transform: rotate(180deg);
+    z-index: 0;
+    
+    @include tablet {
+      left: 20%;
+      top: 30px;
+      opacity: 0.3;
+    }
+    
+    @include mobile {
+      display: none;
+    }
   }
 
   .bg-shape-4{
     position: absolute;
     left: 100px;
     bottom: 100px;
+    z-index: 0;
+    
+    @include tablet {
+      left: 30px;
+      bottom: 50px;
+      opacity: 0.4;
+    }
+    
+    @include mobile {
+      display: none;
+    }
   }
 
   .bg-shape-5{
     position: absolute;
     left: 40%;
     bottom: -25px;
+    z-index: 0;
+    
+    @include tablet {
+      left: 30%;
+      bottom: -10px;
+      opacity: 0.3;
+    }
+    
+    @include mobile {
+      display: none;
+    }
   }
 
   .bg-shape-6{
     position: absolute;
     bottom: 100px;
     right: -100px;
+    z-index: 0;
+    
+    @include tablet {
+      right: -50px;
+      bottom: 50px;
+      opacity: 0.3;
+    }
+    
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+/* Ensure content section has proper spacing and z-index */
+.section.pt-5 {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  margin-top: 20px; /* Add some margin to separate from background shapes */
+  
+  @include tablet {
+    padding-top: 40px !important;
+    margin-top: 10px;
+  }
+  
+  @include mobile {
+    padding-top: 30px !important;
+    margin-top: 5px;
+  }
+}
+
+/* Additional responsive adjustments for content readability */
+@media (max-width: 768px) {
+  .page-title-alt {
+    .bg-shape-1,
+    .bg-shape-2,
+    .bg-shape-3,
+    .bg-shape-4,
+    .bg-shape-5,
+    .bg-shape-6 {
+      display: none !important;
+    }
+  }
+}
+
+/* Ensure text content is always readable */
+.section .container .row .col-md-8 {
+  position: relative;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  
+  @include mobile {
+    padding: 15px;
+    margin-bottom: 20px;
   }
 }
