@@ -10,8 +10,9 @@ copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.c
 
 menu:
   - { name: About, link: "/about" }
-  - { name: Blog, link: "/blog" }
+  # - { name: Blog, link: "/blog" }
   - { name: Portfolio, link: "/portfolio" }
+  - { name: CV/Resume, link: "/cv" }
   - { name: Contact, link: "/contact" }
 
 #-------------------------------
