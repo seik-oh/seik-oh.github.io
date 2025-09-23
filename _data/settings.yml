@@ -34,13 +34,13 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: "Hi! I'm Seik <br> HCI × UX Researcher & Engineer"
+  hero-title: "Hi!<br>I'm Seik<br>Computer Science × Learning Scientist & Researcher"
   # hero-title: "Hi! I'm Seik <br> HCI & Applied Learning Scientist<br/>× UX Researcher & Engineer"
 
 social:
   - { icon: "ti-linkedin", link: "https://linkedin.com/in/seikoh" }
-  - { icon: "ti-github", link: "https://github.com/glitterer" }
-  - { icon: "ti-email", link: "mailto:seikoh@gatech.edu" }
+  - { icon: "ti-github", link: "https://github.com/seik-oh" }
+  - { icon: "ti-email", link: "mailto:seik_oh@gatech.edu" }
 
 #-------------------------------
 # About (Section and Page)
