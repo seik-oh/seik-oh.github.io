@@ -1,4 +1,5 @@
 <!-- footer -->
+<!--
 <footer class="bg-dark footer-section">
   <div class="section">
     <div class="container">
@@ -22,8 +23,16 @@
     <p class="mb-0 text-light">{{site.data.settings.copyright | markdownify}}</p>
   </div>
 </footer>
+-->
 <!-- /footer -->
 
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">{{site.data.settings.copyright | markdownify}}</p>
+  </div>
+</footer>
+<!-- /footer -->
 
 <!-- JS Plugins -->
 {% for js in site.data.plugins.js %}

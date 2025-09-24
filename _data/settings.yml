@@ -6,12 +6,13 @@ title: Seik Oh
 logo:
 author: Seik Oh
 description: this is meta description
-copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
+meta-image: /assets/images/about/meta-image.png
+copyright: Copyright &copy; 2025 Seik Oh. Based on design by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
   - { name: About, link: "/about" }
   # - { name: Blog, link: "/blog" }
-  - { name: Works, link: "/portfolio" }
+  - { name: Works, link: "/works" }
   - { name: CV/Resume, link: "/cv" }
   # - { name: Contact, link: "/contact" }
 
@@ -293,3 +294,10 @@ portfolio-items:
 
 # contact-title: Contact
 # contact-email: seikoh@gatech.edu
+
+#-------------------------------
+# Footer Contact Information
+
+# email: 
+# phone: 
+# address: 
