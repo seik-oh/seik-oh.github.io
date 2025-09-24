@@ -42,6 +42,6 @@ I believe in bridging the gap between research and practice. My methodology comb
 
 #### Fun Facts
 
-I love cooking food and eating food!<br/>
-Love to go do coffee shops to chat or do some work while listening to music on my headphones.<br/>
-I used to play the Korean traditional instrument _haegum_ and also played rugby back in the days 🤣
+I love cooking food and eating food!🍚<br/>
+Love to go do coffee shops to chat or do some work while listening to music on my headphones.☕<br/>
+I used to play the Korean traditional instrument _haegum_ and also played rugby back in the days 🏉

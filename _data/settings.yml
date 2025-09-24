@@ -34,7 +34,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: "Hi!<br>I'm Seik<br>Computer Science × Learning Scientist & Researcher"
+  hero-title: "Hi!<br>I'm Seik<br>Computer × Learning Scientist & Researcher"
   # hero-title: "Hi! I'm Seik <br> HCI & Applied Learning Scientist<br/>× UX Researcher & Engineer"
 
 social:
