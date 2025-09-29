@@ -13,7 +13,7 @@
         
         {% for presentation in site.data.settings.key-presentations %}
         <div class="presentation-item mb-4">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm presentation-card">
             <div class="card-body">
               <div class="row">
                 <div class="col-md-8">
@@ -51,13 +51,13 @@
                     <br>
                     <div class="presentation-links mt-3">
                       {% if presentation.slides-url and presentation.slides-url != "#" %}
-                      <a href="{{ presentation.slides-url }}" class="btn btn-sm btn-outline-primary mb-1 d-block" target="_blank">
-                        <i class="ti-file"></i> Slides
+                      <a href="{{ presentation.slides-url }}" class="btn btn-sm btn-outline-primary mb-2 d-block presentation-link" target="_blank">
+                        <i class="ti-file"></i> View Slides
                       </a>
                       {% endif %}
                       {% if presentation.video-url and presentation.video-url != "#" %}
-                      <a href="{{ presentation.video-url }}" class="btn btn-sm btn-outline-secondary mb-1 d-block" target="_blank">
-                        <i class="ti-video-camera"></i> Video
+                      <a href="{{ presentation.video-url }}" class="btn btn-sm btn-primary mb-2 d-block presentation-link" target="_blank">
+                        <i class="ti-video-camera"></i> Watch Video
                       </a>
                       {% endif %}
                     </div>
@@ -157,6 +157,16 @@
 .presentation-links .btn {
   font-size: 0.8rem;
   padding: 0.4em 0.8em;
+}
+
+.presentation-card {
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+}
+
+.presentation-card:hover {
+  border-color: #41228e;
+  box-shadow: 0 8px 25px rgba(65, 34, 142, 0.1);
 }
 
 .border-dashed {
