@@ -13,6 +13,7 @@ menu:
   - { name: About, link: "/about" }
   # - { name: Blog, link: "/blog" }
   - { name: Works, link: "/works" }
+  - { name: Presentations, link: "/key-presentations" }
   - { name: CV/Resume, link: "/cv" }
   # - { name: Contact, link: "/contact" }
 
@@ -296,6 +297,26 @@ portfolio-items:
 # contact-email: seikoh@gatech.edu
 
 #-------------------------------
+# Key Presentations Data
+key-presentations:
+  - title: "NASA SUITS Exit Pitch"
+    venue: "Johnson Space Center"
+    date: "May 2024"
+    type: "student-challenge"
+    description: "Participated as AR/VR developer at final pitch; addressed technical development questions from NASA evaluation panel."
+    location: "Houston, TX"
+    video-url: "https://www.youtube.com/live/79T2riu6UrY"
+    # abstract: "Final presentation for NASA SUITS program showcasing AR/VR development work and technical solutions."
+    
+  - title: "SpaceOver Spotlight"
+    venue: "Apple Developer Academy @ POSTECH"
+    date: "December 2023"
+    type: "keynote"
+    description: "Presented accessibility-focused iOS app SpaceOver as one of three showcase projects to Apple, government representatives, and media."
+    location: "Pohang, South Korea"
+    video-url: "https://drive.google.com/file/d/1uBgmBxEDQRS74Tu2xB3uZ8Qm41UB7-Bk/view"
+    # abstract: "Showcase presentation of SpaceOver, an accessibility-focused iOS application developed at Apple Developer Academy."
+
 # Footer Contact Information
 
 # email: 

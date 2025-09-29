@@ -1,0 +1,181 @@
+<!-- Key Presentations Section -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <!-- <h2 class="section-title">Key Presentations</h2> -->
+        <!-- <p class="text-muted">Selected talks, conference presentations, and invited lectures</p> -->
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        {% for presentation in site.data.settings.key-presentations %}
+        <div class="presentation-item mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-8">
+                  <h4 class="presentation-title mb-2">{{ presentation.title }}</h4>
+                  <p class="presentation-venue mb-1">
+                    <strong>{{ presentation.venue }}</strong>
+                    {% if presentation.location %}
+                    <span class="text-muted"> • {{ presentation.location }}</span>
+                    {% endif %}
+                  </p>
+                  <p class="presentation-date mb-2">{{ presentation.date }}</p>
+                  <p class="presentation-description mb-3">
+                    {{ presentation.description }}
+                  </p>
+                  {% if presentation.abstract %}
+                  <div class="presentation-abstract mb-3">
+                    <small class="text-muted">
+                      <strong>Abstract:</strong> {{ presentation.abstract }}
+                    </small>
+                  </div>
+                  {% endif %}
+                </div>
+                <div class="col-md-4 text-md-right">
+                  <div class="presentation-meta">
+                    <span class="presentation-type presentation-type-{{ presentation.type }} mb-2">
+                      {% case presentation.type %}
+                        {% when 'keynote' %}Keynote
+                        {% when 'invited' %}Invited Talk
+                        {% when 'conference' %}Conference
+                        {% when 'workshop' %}Workshop
+                        {% when 'student-challenge' %}Student Challenge
+                        {% else %}{{ presentation.type | capitalize }}
+                      {% endcase %}
+                    </span>
+                    <br>
+                    <div class="presentation-links mt-3">
+                      {% if presentation.slides-url and presentation.slides-url != "#" %}
+                      <a href="{{ presentation.slides-url }}" class="btn btn-sm btn-outline-primary mb-1 d-block" target="_blank">
+                        <i class="ti-file"></i> Slides
+                      </a>
+                      {% endif %}
+                      {% if presentation.video-url and presentation.video-url != "#" %}
+                      <a href="{{ presentation.video-url }}" class="btn btn-sm btn-outline-secondary mb-1 d-block" target="_blank">
+                        <i class="ti-video-camera"></i> Video
+                      </a>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <!-- Future Presentations Placeholder (only show if no presentations exist) -->
+        {% if site.data.settings.key-presentations.size == 0 or site.data.settings.key-presentations[0].title == "Future Presentation Title" %}
+        <div class="presentation-item mb-4">
+          <div class="card shadow-sm border-dashed">
+            <div class="card-body text-center">
+              <div class="presentation-placeholder">
+                <i class="ti-microphone icon mb-3 text-muted" style="font-size: 3rem;"></i>
+                <h5 class="text-muted">Presentations Coming Soon</h5>
+                <p class="text-muted small">Key presentations, talks, and conference presentations will be added here as they are delivered.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.presentation-item {
+  transition: transform 0.2s ease;
+}
+
+.presentation-item:hover {
+  transform: translateY(-2px);
+}
+
+.presentation-title {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.presentation-venue {
+  color: #41228e;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.presentation-date {
+  color: #666;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.presentation-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.presentation-type {
+  font-size: 0.75rem;
+  padding: 0.5em 0.75em;
+  font-weight: 500;
+}
+
+.presentation-type-keynote {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.presentation-type-invited {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.presentation-type-conference {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.presentation-type-workshop {
+  background-color: #6f42c1;
+  color: #fff;
+}
+
+.presentation-type-student-challenge {
+  background-color: #108134;
+  color: #fff;
+}
+
+.presentation-links .btn {
+  font-size: 0.8rem;
+  padding: 0.4em 0.8em;
+}
+
+.border-dashed {
+  border: 2px dashed #dee2e6 !important;
+}
+
+.presentation-placeholder {
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .presentation-title {
+    font-size: 1.1rem;
+  }
+  
+  .presentation-links .btn {
+    display: inline-block !important;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+</style>
