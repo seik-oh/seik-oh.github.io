@@ -312,7 +312,7 @@ key-presentations:
     venue: "Apple Developer Academy @ POSTECH"
     date: "December 2023"
     type: "keynote"
-    description: "Presented accessibility-focused iOS app SpaceOver as one of three showcase projects to Apple, government representatives, and media."
+    description: "Presented SpaceOver, an iOS app designed to empower people who are blind or visually impaired to independently explore and experience astronomy and celestial objects, as one of three showcase projects to Apple, government representatives, and media."
     location: "Pohang, South Korea"
     video-url: "https://drive.google.com/file/d/1uBgmBxEDQRS74Tu2xB3uZ8Qm41UB7-Bk/view"
     # abstract: "Showcase presentation of SpaceOver, an accessibility-focused iOS application developed at Apple Developer Academy."
