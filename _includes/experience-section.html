@@ -1,35 +1,232 @@
 {% if site.data.settings.experience %}
 <!-- experience -->
-<section class="section">
+<section class="section position-relative">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-title">{{ site.data.settings.experience-title }}</h2>
       </div>
     </div>
-    <div class="row justify-content-center">
-      {% for experience in site.data.settings.experience %}
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="experience-item text-center">
-          <img src="{{ site.baseurl }}/assets/images/experience/{{ experience.icon }}" alt="{{ site.data.settings.experience-title }} icon" class="experience-icon">
-          <div class="experience-date">{{ experience.date }}</div>
-          <h4 class="mb-2">{{ experience.name }}</h4>
-          <h6 class="text-light">{{ experience.organization }}</h6>
+    
+    <!-- Timeline -->
+    <div class="row justify-content-center" style="margin-top: -50px;">
+      <div class="col-11">
+        <div class="experience-timeline">
+          {% for experience in site.data.settings.experience %}
+            {% if experience.role and experience.date and experience.location %}
+            <div class="experience-timeline-item">
+              <div class="experience-timeline-marker">
+                <img src="{{ site.baseurl }}/assets/images/experience/{{ experience.icon }}" alt="icon">
+              </div>
+              <div class="experience-timeline-content">
+                <div class="experience-timeline-date">{{ experience.date }}</div>
+                <h4 class="experience-timeline-title">{{ experience.role }}</h4>
+                {% if experience.organization %}
+                <p class="experience-timeline-organization">{{ experience.organization }}</p>
+                {% endif %}
+                <p class="experience-timeline-location">{{ experience.location }}</p>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
-      {% endfor %}
     </div>
   </div>
 </section>
 
 <style>
-.experience-date {
+.experience-timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #41228e, #2bfdff);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.experience-timeline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 4px;
+  height: 0;
+  background: transparent;
+  transform: translateX(-50%);
+}
+
+.experience-timeline-item {
+  position: relative;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+}
+
+.experience-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.experience-timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.experience-timeline-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(65, 34, 142, 0.3);
+  border: 4px solid #41228e;
+  transition: all 0.3s ease;
+}
+
+.experience-timeline-item:hover .experience-timeline-marker {
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(65, 34, 142, 0.5);
+}
+
+.experience-timeline-marker img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.experience-timeline-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 50px);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.experience-timeline-item:hover .experience-timeline-content {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.experience-timeline-item:nth-child(odd) .experience-timeline-content {
+  margin-right: 50px;
+  text-align: right;
+}
+
+.experience-timeline-item:nth-child(even) .experience-timeline-content {
+  margin-left: 50px;
+  text-align: left;
+}
+
+.experience-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+}
+
+.experience-timeline-item:nth-child(odd) .experience-timeline-content::before {
+  right: -30px;
+  border-left-color: white;
+  transform: translateY(-50%);
+}
+
+.experience-timeline-item:nth-child(even) .experience-timeline-content::before {
+  left: -30px;
+  border-right-color: white;
+  transform: translateY(-50%);
+}
+
+.experience-timeline-date {
   color: #41228e;
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.experience-timeline-title {
+  color: #222;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.experience-timeline-organization {
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.experience-timeline-location {
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-timeline::before {
+    left: 30px;
+  }
+  
+  .experience-timeline-item {
+    flex-direction: row !important;
+    padding-left: 60px;
+  }
+  
+  .experience-timeline-marker {
+    left: 30px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+  }
+  
+  .experience-timeline-marker img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .experience-timeline-item:hover .experience-timeline-marker {
+    transform: translateX(-50%) scale(1.1);
+  }
+  
+  .experience-timeline-content {
+    width: 100%;
+    margin: 0 !important;
+    text-align: left !important;
+    padding: 20px;
+  }
+  
+  .experience-timeline-content::before {
+    display: none;
+  }
 }
 </style>
 <!-- ./experience -->

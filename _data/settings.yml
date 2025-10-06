@@ -89,40 +89,46 @@ team: []
 experience-title: Experience
 experience:
   - {
-      name: "Graduate Research Assistant,<br/> TILES Lab (HCI & LST & Data Viz)",
-      icon: "icon-1.png",
+      role: "Graduate Research Assistant",
+      organization: "HCI & LST & Data Viz Research @ TILES Lab",
+      icon: "icon-1.png", 
       date: "Aug 2025 – Present",
-      organization: "Georgia Institute of Technology, Atlanta, GA",
+      location: "Georgia Institute of Technology, Atlanta, GA",
     }
   - {
-      name: "Software Developer,<br/> NASA SUITS 2025 (Top 10 Finalist)",
+      role: "Software Developer",
+      organization: "NASA SUITS 2025 (Top 10 Finalist)", 
       icon: "icon-2.png",
       date: "Sep 2024 – May 2025",
-      organization: "RISD Rover x Brown; Johnson Space Center",
+      location: "RISD Rover x Brown; Johnson Space Center",
     }
   - {
-      name: "Research Assistant Intern,<br/> LNCC Lab (UI/UX, Accessibility)",
+      role: "Research Assistant Intern",
+      organization: "UI/UX & Accessibility Research @ LNCC Lab",
       icon: "icon-1.png",
-      date: "Jun 2024 – Dec 2024",
-      organization: "Brown University, Providence, RI",
+      date: "Jun 2024 – Dec 2024", 
+      location: "Brown University, Providence, RI",
     }
   - {
-      name: "AR/VR Developer,<br/> NASA SUITS 2024 (Top 10 Finalist)",
+      role: "AR/VR Developer",
+      organization: "NASA SUITS 2024 (Top 10 Finalist)",
       icon: "icon-2.png",
       date: "Dec 2023 – May 2024",
-      organization: "RISD Rover & Brown University / Johnson Space Center",
+      location: "RISD Rover & Brown University / Johnson Space Center",
     }
   - {
-      name: "iOS Developer Learner,<br/> Apple Developer Academy",
+      role: "iOS Developer Learner",
+      organization: "Apple Developer Academy",
       icon: "icon-3.png",
       date: "Sep 2022 – Dec 2022",
-      organization: "POSTECH, Pohang, South Korea",
+      location: "POSTECH, Pohang, South Korea",
     }
   - {
-      name: "Technical Assistant,<br/> KATE Conference",
+      role: "Technical Assistant",
+      organization: "KATE Conference",
       icon: "icon-3.png",
       date: "Jul 2021 – Aug 2021",
-      organization: "Seoul, South Korea",
+      location: "Seoul, South Korea",
     }
 
 #-------------------------------
