@@ -2,16 +2,20 @@
 <!-- experience -->
 <section class="section">
   <div class="container">
-    <div class="row justify-content-around">
+    <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-title">{{ site.data.settings.experience-title }}</h2>
       </div>
+    </div>
+    <div class="row justify-content-center">
       {% for experience in site.data.settings.experience %}
-      <div class="col-lg-3 col-md-4 text-center">
-        <img src="{{ site.baseurl }}/assets/images/experience/{{ experience.icon }}" alt="{{ site.data.settings.experience-title }} icon">
-        <p class="mb-0">{{ experience.date }}</p>
-        <h4>{{ experience.name }}</h4>
-        <h6 class="text-light">{{ experience.organization }}</h6>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="experience-item text-center">
+          <img src="{{ site.baseurl }}/assets/images/experience/{{ experience.icon }}" alt="{{ site.data.settings.experience-title }} icon" class="experience-icon">
+          <p class="mb-2">{{ experience.date }}</p>
+          <h4 class="mb-2">{{ experience.name }}</h4>
+          <h6 class="text-light">{{ experience.organization }}</h6>
+        </div>
       </div>
       {% endfor %}
     </div>

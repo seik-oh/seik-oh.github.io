@@ -102,19 +102,19 @@ experience:
     }
   - {
       name: "Research Assistant Intern — LNCC Lab (UI/UX, Accessibility)",
-      icon: "icon-3.png",
+      icon: "icon-1.png",
       date: "Jun 2024 – Dec 2024",
       organization: "Brown University, Providence, RI",
     }
   - {
       name: "AR/VR Developer — NASA SUITS 2024 (Top 10 Finalist)",
-      icon: "icon-1.png",
+      icon: "icon-2.png",
       date: "Dec 2023 – May 2024",
       organization: "RISD Rover & Brown University / Johnson Space Center",
     }
   - {
       name: "iOS Developer Learner — Apple Developer Academy",
-      icon: "icon-2.png",
+      icon: "icon-3.png",
       date: "Sep 2022 – Dec 2022",
       organization: "POSTECH, Pohang, South Korea",
     }
