@@ -11,12 +11,12 @@
     <!-- Filter Buttons -->
     <div class="row mb-5">
       <div class="col-12">
-        <div class="btn-group btn-group-toggle justify-content-center d-flex" data-toggle="buttons">
-          <label class="btn btn-sm btn-primary active">
+        <div class="filter-buttons-wrapper d-flex justify-content-center flex-wrap" data-toggle="buttons">
+          <label class="btn btn-sm btn-primary active filter-btn">
             <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
           </label>
           {% for label in site.data.settings.portfolio-label %}
-          <label class="btn btn-sm btn-primary">
+          <label class="btn btn-sm btn-primary filter-btn">
             <input type="radio" name="shuffle-filter" value="{{ label.type }}" />{{ label.title }}
           </label>
           {% endfor %}
@@ -186,8 +186,58 @@
   border: 1px solid #e9ecef;
 }
 
+/* Filter Buttons */
+.filter-buttons-wrapper {
+  gap: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid #f0f0f0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.filter-btn {
+  margin: 5px;
+  white-space: nowrap;
+  border-radius: 25px !important;
+  padding: 8px 20px !important;
+  transition: all 0.3s ease;
+  border: 2px solid #e9ecef !important;
+  background: white !important;
+  color: #666 !important;
+}
+
+.filter-btn:hover {
+  border-color: #41228e !important;
+  color: #41228e !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(65, 34, 142, 0.15);
+}
+
+.filter-btn.active {
+  background-color: #41228e !important;
+  border-color: #41228e !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(65, 34, 142, 0.25);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Filter container on mobile */
+  .filter-buttons-wrapper {
+    padding: 15px;
+    max-width: 100%;
+  }
+  
+  /* Filter buttons on mobile */
+  .filter-btn {
+    font-size: 12px;
+    padding: 6px 15px !important;
+    margin: 3px;
+  }
+  
   /* Make overlay always visible on mobile since hover doesn't work well on touch devices */
   .project-overlay {
     position: relative;
@@ -230,6 +280,19 @@
 }
 
 @media (max-width: 576px) {
+  /* Filter container on small screens */
+  .filter-buttons-wrapper {
+    padding: 12px;
+    border-radius: 12px;
+  }
+  
+  /* Even smaller filter buttons on very small screens */
+  .filter-btn {
+    font-size: 11px;
+    padding: 5px 12px !important;
+    margin: 2px;
+  }
+  
   .project-image img {
     height: 180px;
   }
