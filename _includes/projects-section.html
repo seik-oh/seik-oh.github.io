@@ -188,6 +188,29 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  /* Make overlay always visible on mobile since hover doesn't work well on touch devices */
+  .project-overlay {
+    position: relative;
+    opacity: 1;
+    background: transparent;
+    padding: 10px 0;
+  }
+  
+  .project-links {
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+  
+  .project-links .btn {
+    background: #41228e;
+    color: white;
+    border: none;
+  }
+  
+  .project-links .btn:hover {
+    background: #2d1a5f;
+  }
+  
   .project-content {
     padding: 20px;
   }
@@ -213,6 +236,15 @@
   
   .project-content {
     padding: 15px;
+  }
+  
+  .project-links {
+    padding: 0 15px;
+  }
+  
+  .project-links .btn {
+    font-size: 11px;
+    padding: 6px 12px;
   }
 }
 </style>
